@@ -1,7 +1,9 @@
+using SimpleMediaCenter.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<ViteService>();
 
 var app = builder.Build();
 
