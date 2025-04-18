@@ -99,3 +99,4 @@ dist-ssr
 *.sln
 *.sw?
 .astro
+wwwroot/node__dist
