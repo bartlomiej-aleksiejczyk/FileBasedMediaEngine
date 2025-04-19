@@ -14,7 +14,7 @@
         var isDebug = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development";
         var staticUrl = "/dist/";  // The path where Vite outputs static files in production
         var manifestPath = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "node__dist", "manifest.json");
-        var clientComponentsPath = "node_src/";  // Path to your main JS entry point
+        var clientComponentsPath = "src_node/";  // Path to your main JS entry point
 
         // Call ViteService to get the assets for the environment
         var viteAssets = ViteService.LoadViteAssets(isDebug, staticUrl, clientComponentsPath, manifestPath);
